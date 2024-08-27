@@ -37,9 +37,10 @@ document.getElementById("forms").addEventListener("submit", (evt) => {
             break;
         }
     }
-    if (emailvalido == false) {
+    if (emailvalido == false || email.value == "") {
         email.style.borderColor = "red";
         document.getElementById("erro3").innerHTML = "Please enter a valid email address";
+        emailtest = false;
     }
     else {
         email.style.borderColor = "rgb(85, 85, 85)";
