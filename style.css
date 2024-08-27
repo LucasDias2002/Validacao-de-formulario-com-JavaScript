@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(85, 85, 85);
+}
+
+body {
+    background-color: rgba(224, 241, 231, 255);
+}
+
+.container {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#forms {
+    background-color: white;
+    border-radius: 5px;
+    width: 500px;
+    padding: 30px;
+}
+
+h2 {
+    margin-bottom: 25px;
+}
+
+h6 {
+    color: red;
+    font-size: 10px;
+    margin-top: 6px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+#names {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 50px;
+}
+
+#names>#namef>input,
+#names>#namel>input {
+    width: 100%;
+    height: 30px;
+}
+
+#namef {
+    width: 100%;
+    margin-right: 5px;
+}
+
+#namel {
+    width: 100%;
+    margin-left: 5px;
+}
+
+#querys {
+    display: flex;
+    width: 100%;
+}
+
+#query1,
+#query2 {
+    border: solid 1px rgb(85, 85, 85);
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+
+#query1 {
+    margin-right: 5px;
+}
+
+#query2 {
+    margin-left: 5px;
+}
+
+#query1>label,
+#query2>label {
+    margin: 8px;
+}
+
+#message {
+    width: 100%;
+    height: 70px;
+    font-size: 15px;
+}
+
+#messagediv {
+    margin-top: 20px;
+}
+
+#check {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+#check>label {
+    margin: 0;
+    margin-left: 7px;
+}
+
+button {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(12, 125, 105, 255);
+    color: white;
+    margin-top: 10px;
+}
+
+.email {
+    margin-bottom: 20px;
+}
+
+#email {
+    width: 100%;
+    height: 30px;
+}
+
+input {
+    border-radius: 5px;
+    border: solid 1px rgb(85, 85, 85);
+}
+
+#button {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        margin: 15px;
+    }
+
+    label {
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+
+    #names {
+        display: inline;
+    }
+
+    #namef {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #namel {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #name {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 0px;
+    }
+
+    .email {
+        margin-top: 5px;
+    }
+
+    #querys {
+        display: inline;
+    }
+
+    #query1,
+    #query2 {
+        margin: 0;
+        margin-bottom: 15px;
+        padding: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    #message {
+        height: 200px;
+    }
+}

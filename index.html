@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="forms">
+            <h2>Contact Us</h2>
+            <section id="names">
+                <div id="namef">
+                    <label for="namef">First Name *</label>
+                    <input type="text" name="namef" id="name1" class="name1">
+                    <h6 id="erro1"></h6>
+                </div>
+                <div id="namel">
+                    <label for="namel">Last Name *</label>
+                    <input type="text" name="namel" id="name2" class="name2">
+                    <h6 id="erro2"></h6>
+                </div>
+            </section>
+            <section class="email">
+                <label for="email">Email Address *</label>
+                <input type="email" name="email" id="email">
+                <h6 id="erro3"></h6>
+            </section>
+            <label for="query">Query Type *</label>
+            <section id="querys">
+                <div id="query1">
+                    <input type="radio" name="query" id="radio1">
+                    <label for="query">General Enquiry</label>
+                </div>
+                <div id="query2">
+                    <input type="radio" name="query" id="radio2">
+                    <label for="query">Support Request</label>
+                </div>
+            </section>
+            <h6 id="erro4"></h6>
+            <div id="messagediv">
+                <label for="message">Message *</label>
+                <textarea name="message" id="message"></textarea><br>
+            </div>
+            <h6 id="erro5"></h6>
+            <div id="check">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">I consent to being contacted by the team *</label>
+            </div>
+            <h6 id="erro6"></h6>
+            <button id="button" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
